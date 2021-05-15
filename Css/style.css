@@ -10,6 +10,10 @@ a {
     text-decoration: none;
 }
 
+h2 {
+    font-size: 1.3em;
+}
+
 
 /* Logo */
 
@@ -37,16 +41,15 @@ a {
 .top_nav ul li a {
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
-    font-size: 15px;
+    font-size: 16px;
     color: #0065FC;
-    margin-left: 25px;
+    margin-left: 50px;
 }
 
 
 /* Introduction  */
 
 .under_header {
-    font-size: 14px;
     width: 50%;
     margin-top: 2em;
     margin-bottom: 2em;
@@ -54,6 +57,7 @@ a {
 
 .under_header h1 {
     margin: 0;
+    font-size: 1.2em;
 }
 
 .under_header p {
@@ -64,7 +68,7 @@ a {
 /* Bloc Page*/
 
 .bloc_page {
-    margin: 0 50px;
+    margin: 45px 120px;
     font-family: 'Raleway', sans-serif;
     text-align: left;
 }
@@ -135,19 +139,13 @@ a {
 
 .heb_block {
     background-color: #F2F2F2;
-    padding: 0px 0px 40px 20px;
+    padding-left: 25px;
     border-radius: 20px;
-    max-width: auto;
-}
-
-#link_heb {
-    display: block;
-    margin-top: 2em;
-    color: black;
-    font-weight: bold;
+    width: auto;
 }
 
 .heb_block h2 {
+    margin-top: 1em;
     width: 50%;
 }
 
@@ -155,7 +153,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2em;
+    margin-bottom: 2em;
+    width: auto;
 }
 
 .heb_items {
@@ -168,13 +167,39 @@ a {
     color: black;
 }
 
+.heb_items p {
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+.heb_card {
+    padding-left: 10px;
+    line-height: 1.3em;
+    margin-top: 5px;
+}
+
+.heb_card .stars {
+    margin-top: 5px;
+}
+
+
+/* Lien HEB (Afficher plus) */
+
+#link_heb {
+    display: block;
+    margin-bottom: 1em;
+    color: black;
+    font-weight: bold;
+}
+
 
 /* Image Hebergement */
 
 .pic_dim {
-    height: 180px;
-    width: 360px;
-    border-radius: 10px;
+    height: 160px;
+    width: 300px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 
@@ -184,7 +209,7 @@ a {
     color: #0065FC;
 }
 
-#black_star {
+.black_star {
     color: #F2F2F2;
 }
 
@@ -194,16 +219,22 @@ a {
 .heb_pop {
     display: flex;
     justify-content: space-between;
+    width: auto;
 }
 
 
 /* Populaires */
 
 .populaires {
-    margin-left: 40px;
+    margin: 0;
     background-color: #F2F2F2;
     border-radius: 20px;
     width: auto;
+}
+
+.populaires h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .pop_top {
@@ -216,7 +247,7 @@ a {
 .pop_group {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -226,15 +257,15 @@ a {
     padding: 5px;
     border-radius: 10px;
     margin: 15px;
-    width: 450px;
+    width: 320px;
 }
 
 
 /* Image populaires */
 
 .pop_img {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
 }
@@ -243,14 +274,35 @@ a {
 /* Rightside Image Pop */
 
 .pop_right {
-    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 10px;
     text-align: left;
 }
 
 .pop_right p {
     color: black;
+    padding: 0;
+    margin-top: 8px;
 }
 
-.pop_right:first-child {
-    font-weight: bold;
+
+/* Activités */
+
+.activity_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.activity_group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.img_act1 {
+    width: 250px;
+    height: 400px;
 }
