@@ -68,10 +68,11 @@ h2 {
 /* Bloc Page*/
 
 .bloc_page {
-    margin: 45px 150px;
+    margin-top: 45px;
+    margin-left: 200px;
     font-family: 'Raleway', sans-serif;
     height: 100vh;
-    text-align: left;
+    width: 1440px;
 }
 
 
@@ -293,20 +294,29 @@ h2 {
 
 /* Activités */
 
+.activity_title {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* .activity_list {
+    height: 100%;
+    width: 100%;
+} */
+
 .activity_list h2 {
-    margin: 1em 0;
+    margin: 2em 0;
 }
 
 .activity_grid {
-    height: 450px;
+    height: 470px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 25% 5% 5% 7.5% 7.5% 25% 25%;
     grid-gap: 20px;
 }
-
-.activity_grid a {}
 
 .act_elem {
     height: 100%;
@@ -346,8 +356,4 @@ h2 {
 .activity6 {
     grid-column-start: 4;
     grid-row: 5/7;
-}
-
-.footer {
-    margin-top: 10em;
 }
