@@ -383,9 +383,13 @@ form {
     height: 200px;
 }
 
-.footer_content {
+.footer_link {
     display: flex;
     flex-direction: column;
+}
+
+.footer_content {
+    margin: auto 0;
 }
 
 .footer_link {
