@@ -10,6 +10,11 @@ a {
     text-decoration: none;
 }
 
+ul,
+li {
+    list-style-type: none;
+}
+
 h2 {
     font-weight: bold;
     font-size: 1.3em;
@@ -253,7 +258,7 @@ form {
 
 .populaires h2 {
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 .pop_top {
@@ -365,4 +370,33 @@ form {
 
 .img_act5 {
     height: 225px;
+}
+
+
+/* Footer */
+
+.footer_block {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F2F2F2;
+    margin-top: 2em;
+    height: 200px;
+}
+
+.footer_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_link {
+    padding-left: 15px;
+}
+
+.footer_link a {
+    margin: 1em 0;
+    color: black;
+}
+
+.footer_link ul {
+    padding: 0;
 }
