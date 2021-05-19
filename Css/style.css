@@ -72,13 +72,8 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     font-family: 'Raleway', sans-serif;
-    height: 100vh;
+    height: auto;
     width: 1440px;
-}
-
-body {
-    height: 100vh;
-    width: 100%;
 }
 
 
