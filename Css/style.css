@@ -91,26 +91,27 @@ h2 {
     background-color: #0065FC;
     color: white;
     border: 0;
-    border-top-right-radius: 5px 5px;
-    border-bottom-right-radius: 5px 5px;
-    margin-top: 1em;
-    margin-bottom: 2em;
+    border-top-right-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;
+    padding: 0.8em;
 }
 
 .icon_loc {
-    padding: 0.2em;
-    border-top-left-radius: 5px 5px;
-    border-bottom-left-radius: 5px 5px;
+    padding: 0.7em;
+    border-top-left-radius: 10px 10px;
+    border-bottom-left-radius: 10px 10px;
     background-color: #F2F2F2;
 }
 
 .search_bar {
     display: flex;
     align-items: center;
+    margin: 2em 0;
 }
 
-form {
-    font-size: 1.5em;
+.search_bar input {
+    font-size: 1em;
+    padding: 0.5em;
 }
 
 
@@ -121,13 +122,14 @@ form {
     font-family: 'Raleway';
     font-weight: bold;
     color: black;
-    margin-left: 25px;
+    /* margin-left: 25px;
     margin-top: 15px;
-    margin-right: 15px;
+    margin-right: 15px; */
 }
 
 .filter {
     display: flex;
+    margin-bottom: 1em;
 }
 
 .filter_list {
@@ -136,10 +138,18 @@ form {
 }
 
 .filter_list i {
+    font-size: 1em;
     color: #0065FC;
-    background-color: #F2F2F2;
-    /* padding: 10px; */
-    /* border-radius: 50%; */
+    background-color: #DEEBFF;
+    padding: 1em;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.filter_list a {
+    margin-left: 20px;
+    border-radius: 30px;
+    padding-right: 1em;
 }
 
 
@@ -392,14 +402,15 @@ form {
 .footer_link {
     display: flex;
     flex-direction: column;
+    padding-left: 0;
+    margin-top: 3em;
 }
 
-.footer_link {
-    padding-left: 0;
+.footer_link h4 {
+    margin: 0;
 }
 
 .footer_link a {
-    display: block;
     color: black;
 }
 
