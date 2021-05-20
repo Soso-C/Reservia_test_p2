@@ -256,16 +256,21 @@ form {
     width: auto;
 }
 
-.populaires h2 {
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-}
+
+/* .populaires h2 {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+} */
 
 .pop_top {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 15px;
+}
+
+.pop_top i {
+    font-size: 1.3em;
 }
 
 .pop_group {
@@ -377,7 +382,8 @@ form {
 
 .footer_block {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: flex-start;
     background-color: #F2F2F2;
     margin-top: 2em;
     height: 200px;
@@ -388,19 +394,19 @@ form {
     flex-direction: column;
 }
 
-.footer_content {
-    margin: auto 0;
-}
-
 .footer_link {
-    padding-left: 15px;
+    padding-left: 0;
 }
 
 .footer_link a {
-    margin: 1em 0;
+    display: block;
     color: black;
 }
 
 .footer_link ul {
     padding: 0;
+}
+
+.footer_link li {
+    margin-bottom: 0.5em;
 }
