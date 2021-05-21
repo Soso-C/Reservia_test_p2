@@ -493,6 +493,9 @@ h1 {
 /* Media querrie */
 
 @media screen and (max-width: 1430px) {
+    .bloc_page {
+        margin: 0 auto;
+    }
     .populaires {
         order: -1;
     }
@@ -527,11 +530,12 @@ h1 {
     }
     .activity_block {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
+        align-items: flex-start;
         justify-content: flex-start;
         width: 100%;
-        height: 100%;
+        height: 900px;
     }
     .act_content {
         width: 45%;
@@ -539,7 +543,7 @@ h1 {
     }
     .act_link img {
         width: 100%;
-        height: 100%;
+        height: 200px;
     }
 }
 
