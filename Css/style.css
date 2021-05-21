@@ -82,9 +82,9 @@ h2 {
     margin-bottom: 2em;
 }
 
-.under_header h1 {
+h1 {
     margin: 0;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .under_header p {
@@ -141,13 +141,6 @@ h2 {
 
 /* Filtre */
 
-
-/* .filter_list a {
-    border: 2px solid #F2F2F2;
-    font-family: 'Raleway';
-    color: black;
-} */
-
 .filter {
     display: flex;
     margin-bottom: 1em;
@@ -190,6 +183,15 @@ h2 {
     height: 3em;
     width: 3em;
     margin-right: 0.5em;
+}
+
+
+/* Effect Filter:hover background color */
+
+.filter a:hover {
+    background-color: #0065FC;
+    color: #fff;
+    transition: 0.3s;
 }
 
 
@@ -483,3 +485,20 @@ h2 {
     transform: scale(1.02);
     transition: ease 0.3s;
 }
+
+
+/* Effect hover color Afficher plus */
+
+#link_heb:hover {
+    color: #0065FC;
+}
+
+
+/* Effect Footer Hover color */
+
+.footer_link a:hover {
+    color: #0065FC;
+}
+
+
+/* Media querrie */
