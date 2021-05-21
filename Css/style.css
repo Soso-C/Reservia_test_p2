@@ -531,12 +531,60 @@ h1 {
         flex-wrap: wrap;
         justify-content: flex-start;
         width: 100%;
+        height: 100%;
     }
     .act_content {
         width: 45%;
+        height: 45%;
     }
     .act_link img {
         width: 100%;
         height: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .bloc_page {
+        margin: 0 auto;
+    }
+    .populaires {
+        order: -1;
+    }
+    .pop_group {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .pop_img {
+        width: 40%;
+    }
+    .pop_content {
+        width: 90%;
+    }
+    .heb_pop {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .heb_items {
+        width: 90%;
+        margin-bottom: 1em;
+    }
+    .pic_dim {
+        width: 100%;
+    }
+    .heb_block {
+        background-color: #fff;
+        width: 100%;
+        padding: 0;
+    }
+    .heb_group {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .activity_block {
+        display: none;
     }
 }
