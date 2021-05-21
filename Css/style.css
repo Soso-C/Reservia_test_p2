@@ -52,15 +52,11 @@ h2 {
 .top_nav ul li a {
     font-size: 16px;
     margin-left: 50px;
+    color: black;
 }
 
 #sign {
     color: #0065FC;
-}
-
-#activités,
-#hébergements {
-    color: black;
 }
 
 
@@ -157,7 +153,6 @@ h1 {
 
 .filter_elem {
     display: flex;
-    justify-content: baseline;
     align-items: center;
     margin-right: 2em;
 }
@@ -524,6 +519,8 @@ h1 {
     .heb_block {
         background-color: #fff;
         width: 100%;
+        padding: 0;
+        margin-left: 20px;
     }
     .heb_group {
         justify-content: flex-start;
