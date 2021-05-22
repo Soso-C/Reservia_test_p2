@@ -6,13 +6,11 @@
     /* font-weight: bold; */
 }
 
-a {
-    text-decoration: none;
-}
-
 ul,
-li {
+li,
+a {
     list-style-type: none;
+    text-decoration: none;
 }
 
 h2 {
@@ -44,9 +42,8 @@ h2 {
 
 /* Nav Bar */
 
-.top_nav ul li {
-    display: inline-block;
-    list-style: none;
+.top_nav ul {
+    display: flex;
 }
 
 .top_nav ul li a {
@@ -856,7 +853,4 @@ h1 {
         align-content: center;
         padding-left: 1em;
     }
-}
-
-
 }
