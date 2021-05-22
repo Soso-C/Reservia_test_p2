@@ -736,16 +736,6 @@ h1 {
     }
     footer {
         font-size: 0.9em;
-    }
-    .footer_block {
-        display: flex;
-        justify-content: flex-start;
-        background-color: #F2F2F2;
-        flex-direction: column;
-        height: 90%;
-    }
-    .footer_content {
-        width: 90%;
-        margin: 0 auto;
+        height: 100%;
     }
 }
