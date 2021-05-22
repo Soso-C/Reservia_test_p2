@@ -554,32 +554,47 @@ h1 {
     }
 }
 
-
-/* @media screen and (max-width: 1000px) {
-
+@media screen and (max-width: 1005px) {
+    body {
+        margin-left: 1em;
+    }
+    /*Populaire*/
     .populaires {
         order: -1;
     }
     .pop_group {
         display: flex;
-        flex-direction: column;
-        width: 90%;
-        margin: 0 auto;
-    }
-    .pop_img {
-        width: 40%;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        margin: 0.5em auto;
     }
     .pop_content {
-        width: 90%;
+        width: 80%;
+        margin: 0 0.5em;
+    }
+    .pop_right {
+        font-size: 0.85em;
+        /* display: inline; */
+    }
+    .pop_right strong {
+        display: inline;
     }
     .heb_pop {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
+    .pop_top {
+        margin: 0 0.5em;
+    }
+    /* Hébergement */
     .heb_items {
-        width: 90%;
-        margin-bottom: 1em;
+        width: 100%;
+        margin-right: 1em;
+    }
+    .heb_card {
+        font-size: 0.9em;
     }
     .pic_dim {
         width: 100%;
@@ -588,13 +603,149 @@ h1 {
         background-color: #fff;
         width: 100%;
         padding: 0;
+        margin-left: 0;
     }
     .heb_group {
+        justify-content: flex-start;
+    }
+    #link_heb {
+        margin-left: 0.5em;
+    }
+    /*Activités*/
+    .activity_block {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        height: 900px;
+        margin: 0 auto;
+    }
+    .act_content {
+        width: 46%;
+        height: 46%;
+    }
+    .act_link img {
+        width: 100%;
+        height: 200px;
+    }
+    .activity_list h2 {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .filter {
+        font-size: 0.9em;
+    }
+    footer {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 856px) {
+    body {
+        margin-left: 1em;
+    }
+    /*Populaire*/
+    .populaires {
+        order: -1;
+    }
+    .pop_group {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        margin: 0.5em auto;
+    }
+    .pop_content {
+        width: 80%;
+        margin: 1em 0.5em;
+    }
+    .pop_right {
+        font-size: 0.85em;
+        /* display: inline; */
+    }
+    .pop_right strong {
+        display: inline;
+    }
+    .heb_pop {
         display: flex;
         flex-direction: column;
         width: 100%;
+    }
+    .pop_top {
+        margin: 0 0.5em;
+    }
+    .pop_img {
+        width: 30%;
+    }
+    /* Hébergement */
+    .heb_items {
+        width: 100%;
+        margin-right: 1em;
+    }
+    .heb_card {
+        font-size: 0.9em;
+    }
+    .pic_dim {
+        width: 100%;
+    }
+    .heb_block {
+        background-color: #fff;
+        width: 100%;
+        padding: 0;
         margin-left: 0;
     }
+    .heb_group {
+        justify-content: flex-start;
+    }
+    #link_heb {
+        margin-left: 0.5em;
+    }
+    /*Activités*/
     .activity_block {
-        display: none;
-    } */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        height: 900px;
+        margin: 0 auto;
+    }
+    .act_content {
+        width: 46%;
+        height: 46%;
+    }
+    .act_link img {
+        width: 100%;
+        height: 200px;
+    }
+    .activity_list h2 {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .filter {
+        font-size: 0.9em;
+    }
+    .filter_list {
+        flex-wrap: wrap;
+    }
+    .filter_list a {
+        margin: 0.5em 0;
+    }
+    footer {
+        font-size: 0.9em;
+    }
+    .footer_block {
+        display: flex;
+        justify-content: flex-start;
+        background-color: #F2F2F2;
+        flex-direction: column;
+        height: 90%;
+    }
+    .footer_content {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
