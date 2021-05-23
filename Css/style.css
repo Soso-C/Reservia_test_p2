@@ -826,8 +826,13 @@ h1 {
         height: 200px;
     }
     .activity_list h2 {
+        display: flex;
+        justify-content: center;
         margin-left: 0;
         margin-bottom: 0;
+    }
+    .activity_title {
+        font-size: 0.9em;
     }
     .filter {
         font-size: 0.9em;
@@ -851,6 +856,55 @@ h1 {
         height: 100%;
         flex-direction: column;
         align-content: center;
-        padding-left: 1em;
+        padding-left: 1.5em;
+    }
+}
+
+@media screen and (max-width: 564px) {
+    .top_nav ul {
+        flex-direction: row-reverse;
+        flex-wrap: wrap-reverse;
+    }
+    /*Activités*/
+    .activity_block {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .act_content {
+        width: 95%;
+        height: 100%;
+    }
+    .heb_group {
+        width: 100%;
+    }
+    .heb_items {
+        width: 95%;
+    }
+    .activity_list h2 {
+        justify-content: flex-start;
+        margin-bottom: 2em;
+    }
+    .heb_block h2 {
+        text-align: left;
+    }
+    .pop_group {
+        width: 100%;
+    }
+    .pop_content {
+        width: 90%;
+    }
+    .pop_top {
+        justify-content: space-between;
+    }
+    h1 {
+        font-size: 1em;
+    }
+    .under_header p {
+        font-size: 0.9em;
     }
 }
