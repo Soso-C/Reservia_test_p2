@@ -739,9 +739,9 @@ h1 {
 }
 
 @media screen and (max-width: 630px) {
-    body {
+    /* body {
         margin-left: 1em;
-    }
+    } */
     /*Populaire*/
     .populaires {
         order: -1;
@@ -759,15 +759,9 @@ h1 {
     }
     .pop_right {
         font-size: 0.85em;
-        /* display: inline; */
     }
     .pop_right strong {
         display: inline;
-    }
-    .heb_pop {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
     }
     .pop_top {
         justify-content: space-around;
@@ -782,6 +776,11 @@ h1 {
         margin-right: 1em;
         margin-bottom: 1em;
         margin-top: 1em;
+    }
+    .heb_pop {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
     .heb_block h2 {
         text-align: center;
@@ -861,9 +860,8 @@ h1 {
 }
 
 @media screen and (max-width: 564px) {
-    .top_nav ul {
-        flex-direction: row-reverse;
-        flex-wrap: wrap-reverse;
+    .bloc_page {
+        margin-top: 0;
     }
     /*Activités*/
     .activity_block {
@@ -879,18 +877,30 @@ h1 {
         width: 95%;
         height: 100%;
     }
+    .activity_list h2 {
+        justify-content: flex-start;
+        margin-bottom: 2em;
+    }
+    .act_link img {
+        height: 150px;
+    }
+    /* Hébergement */
     .heb_group {
         width: 100%;
     }
     .heb_items {
         width: 95%;
     }
-    .activity_list h2 {
-        justify-content: flex-start;
-        margin-bottom: 2em;
+    .heb_card {
+        font-size: 1em;
     }
     .heb_block h2 {
         text-align: left;
+    }
+    /* Populaire */
+    .populaires {
+        border-radius: 0;
+        width: 100%;
     }
     .pop_group {
         width: 100%;
@@ -898,13 +908,38 @@ h1 {
     .pop_content {
         width: 90%;
     }
+    .pop_img {
+        width: 40%;
+    }
+    .pop_right {
+        font-size: 1em;
+    }
     .pop_top {
         justify-content: space-between;
     }
+    /* Top page */
     h1 {
         font-size: 1em;
     }
     .under_header p {
         font-size: 0.9em;
+    }
+    .top_nav ul {
+        flex-direction: row-reverse;
+        flex-wrap: wrap-reverse;
+    }
+    /* Search bar on/off */
+    .phone {
+        display: initial;
+        background-color: #0065FC;
+        color: white;
+        border: 0;
+        border-top-right-radius: 10px 10px;
+        border-bottom-right-radius: 10px 10px;
+        padding: 0.8em;
+        cursor: pointer;
+    }
+    .search_button {
+        display: none;
     }
 }
