@@ -126,6 +126,7 @@ h1 {
 
 .ville {
     font-weight: bold;
+    outline: none;
 }
 
 .phone {
