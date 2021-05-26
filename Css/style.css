@@ -34,43 +34,60 @@ h2 {
 /* Top Page */
 
 #top_page {
-    margin-top: 1em;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 70% 10% 10% 10%;
+    margin: 0;
 }
 
-
-/* Nav Bar */
-
-.top_nav ul {
-    display: flex;
-}
-
-.top_nav ul li a {
-    font-size: 16px;
-    margin-left: 50px;
-    color: black;
+#logo {
+    grid-column: 1;
 }
 
 #sign {
+    grid-column: 4;
+    margin: auto;
+}
+
+#activités {
+    grid-column: 3;
+    margin: auto;
+}
+
+#hébergements {
+    grid-column: 2;
+    margin: auto;
+}
+
+#top_page a {
+    font-size: 16px;
     color: #0065FC;
+}
+
+#activités a {
+    color: black;
+}
+
+#hébergements a {
+    font-weight: 600;
+    border-top: 2px solid #0065FC;
+    padding-top: 3.5em;
 }
 
 
 /* Effect Hover Nav Bar */
 
-#activités:hover,
-#hébergements:hover {
-    padding-top: 3.6em;
+
+/* #activités a:hover {
+    padding-top: 3.5em;
     border-top: 2px solid #0065FC;
     color: #0065FC;
-}
+} */
 
 
 /* Introduction  */
 
 .under_header {
-    width: 50%;
     margin-top: 2em;
     margin-bottom: 2em;
 }
@@ -126,6 +143,8 @@ h1 {
 
 .ville {
     font-weight: bold;
+    color: black;
+    outline: none;
 }
 
 .phone {
@@ -520,6 +539,7 @@ h1 {
         width: 100%;
         padding: 0;
         margin-left: 1em;
+        margin-top: 1em;
     }
     .heb_group {
         justify-content: flex-start;
@@ -551,10 +571,34 @@ h1 {
     }
 }
 
+@media screen and (max-width: 1200px) {
+    #top_page {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 55% 15% 15% 15%;
+        margin: 0;
+    }
+    #logo {
+        grid-column: 1;
+    }
+    #sign {
+        grid-column: 4;
+    }
+    #activités {
+        grid-column: 3;
+    }
+    #hébergements {
+        grid-column: 2;
+    }
+}
+
 @media screen and (max-width: 1005px) {
     body {
         margin-left: 1em;
     }
+    /* .bloc_page {
+        margin-top: 0;
+    } */
     /*Populaire*/
     .populaires {
         order: -1;
@@ -671,7 +715,7 @@ h1 {
         width: 100%;
     }
     .pop_top {
-        width: auto;
+        width: 90%;
     }
     .pop_img {
         width: 30%;
@@ -736,12 +780,37 @@ h1 {
         font-size: 0.9em;
         height: 100%;
     }
+    h1 {
+        font-size: 1em;
+    }
+    /*Top page grid*/
+    #top_page {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 40% 20% 20% 20%;
+        margin: 0;
+    }
+    #logo {
+        grid-column: 1;
+    }
+    #sign {
+        grid-column: 4;
+    }
+    #activités {
+        grid-column: 3;
+    }
+    #hébergements {
+        grid-column: 2;
+    }
+    #top_page a {
+        font-size: 0.9em;
+    }
+    #hébergements a {
+        padding-top: 3.9em;
+    }
 }
 
 @media screen and (max-width: 630px) {
-    /* body {
-        margin-left: 1em;
-    } */
     /*Populaire*/
     .populaires {
         order: -1;
@@ -924,10 +993,6 @@ h1 {
     .under_header p {
         font-size: 0.9em;
     }
-    .top_nav ul {
-        flex-direction: row-reverse;
-        flex-wrap: wrap-reverse;
-    }
     /* Search bar on/off */
     .phone {
         display: initial;
@@ -941,5 +1006,42 @@ h1 {
     }
     .search_button {
         display: none;
+    }
+    #top_page {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 1fr;
+        margin: 0;
+        grid-template-areas: "logo sign" "heb act";
+    }
+    #logo {
+        grid-area: logo;
+    }
+    #sign {
+        grid-area: sign;
+        padding-left: 2em;
+    }
+    #activités {
+        grid-area: act;
+        width: 100%;
+        text-align: center;
+        border-bottom: 3px solid #F2F2F2;
+        padding-bottom: 1em;
+        padding-top: 1em;
+    }
+    #hébergements {
+        grid-area: heb;
+        width: 100%;
+        text-align: center;
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 1em;
+        padding-top: 1em;
+    }
+    .top_nav div {
+        margin-left: 50px;
+    }
+    #hébergements a {
+        border-top: 0;
     }
 }
