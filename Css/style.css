@@ -811,6 +811,13 @@ h1 {
 }
 
 @media screen and (max-width: 630px) {
+    body {
+        margin: 0;
+    }
+    .bloc_page {
+        margin: 0;
+        padding: 10px 8px;
+    }
     /*Populaire*/
     .populaires {
         order: -1;
@@ -956,6 +963,7 @@ h1 {
     /* Hébergement */
     .heb_group {
         width: 100%;
+        padding: 0 5px;
     }
     .heb_items {
         width: 95%;
@@ -1020,7 +1028,7 @@ h1 {
     }
     #sign {
         grid-area: sign;
-        padding-left: 2em;
+        padding-left: 5em;
     }
     #activites {
         grid-area: act;
