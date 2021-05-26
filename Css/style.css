@@ -1054,5 +1054,6 @@ h1 {
     }
     #hebergements a {
         border-top: 0;
+        padding-top: 0;
     }
 }
